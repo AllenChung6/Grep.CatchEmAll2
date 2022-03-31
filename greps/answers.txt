@@ -1,13 +1,22 @@
 # Part 1
 ### a) In the answers file, found in the greps directory, show the grep statement you used to catch each pokemon
 and save to a txt file, in the format [pokemon name].txt
+Grep:
 grep "beed" filescan_00.1 (beedrill)
 grep "blas" filescan_00.1 (blastoise)
-grep bulb filescan_00.1 (bulbasaur)
-grep butt filescan_00.1 (butterfree)
+grep "bulb" filescan_00.1 (bulbasaur)
+grep "butt" filescan_00.1 (butterfree)
 grep "izard" filescan_00.2 (charizard)
 grep "mander" filescan_00.2 (charmander)
 grep "meleon" filescan_00.2 (charmeleon)
+grep "ivy" filescan_00.3 (ivysaur)
+grep "jigg" filescan_00.3 (jigglypuff)
+grep "meow" filescan_00.3 (meowth)
+grep "pika" filescan_00.3 (pikachu)
+grep "psyd" filescan_00.4 (psyduck)
+grep "squi" filescan_00.4 (squirtle)
+grep "venu" filescan_00.4 (venasaur)
+grep "wart" filescan_00.4 (wartortle)
 
 ### b) Save the each pokemon as a separate .txt file in the captured directory.
 beedrill.txt
@@ -17,9 +26,16 @@ butterfree.txt
 charizard.txt
 charmander.txt
 charmeleon.txt
+ivysaur.txt
+jigglypuff.txt
+meowth.txt
+pikachu.txt
+psyduck.txt
+squirtle.txt
+venasaur.txt
+wartortle.txt
 
-
-### c)
+### c) In which section of the forest (which scan file) did you find each pokemon?
 beedrill filescan_00.1
 blastoise filescan_00.1
 bulbasaur filescan_00.1
@@ -27,23 +43,43 @@ butterfree filescan_00.1
 charizard filescan_00.2
 charmander filescan_00.2
 charmeleon filescan_00.2
-
-
-
-
-
-
+ivysaur filescan_00.3
+jigglypuff filescan_00.3
+meowth filescan_00.3
+pikachu filescan_00.3
+psyduck filescan_00.4
+squirtle filescan_00.4
+venasaur filescan_00.4
+wartortle filescan_00.4
 
 # Part 2
-### a)
+### a) How many pokemon are there? Show your grep that you used to get to that number.
+There are 15 pokemon total (instruction.txt file not included)
+Grep:
+ls -1 | wc -l
 
 
 
 
 
-
-### b)
-
+### b) Who are the three biggest pokemon? (number of lines) Show the grep that you used to get to the result.
+beedrill, charizard, and pikachu are the biggest pokemon by line count (All had 40 lines)
+Grep:
+grep -c 'beed' beedrill.txt (40) lines
+grep -c 'blas' blastoise.txt (38) line
+grep -c 'bulb' bulbasaur.txt (30) line
+grep -c 'butt' butterfree.txt (38) line
+grep -c 'izard' charizard.txt (40) line
+grep -c 'mander' charmander.txt (36) line
+grep -c 'meleon' charmeleon.txt (37) line
+grep -c 'ivy' ivysaur.txt (33) line
+grep -c 'jigg' jigglypuff.txt (34) line
+grep -c 'meow' meowth.txt (33) line
+grep -c 'pika' pikachu.txt (40) line
+grep -c 'psyd' psyduck.txt (37) line
+grep -c 'squi' squirtle.txt (34) line
+grep -c 'venu' venasaur.txt (32) line
+grep -c 'wart' wartortle.txt (37) line
 
 
 
