@@ -1,17 +1,25 @@
 # Part 1
-### a)
+### a) In the answers file, found in the greps directory, show the grep statement you used to catch each pokemon
+and save to a txt file, in the format [pokemon name].txt
+grep "beed" filescan_00.1 (beedrill)
+grep "blas" filescan_00.1 (blastoise)
+grep bulb filescan_00.1 (bulbasaur)
+grep butt filescan_00.1 (butterfree)
 
 
 
-
-### b)
-
+### b) Save the each pokemon as a separate .txt file in the captured directory.
+beedrill.txt
+blastoise.txt
+bulbasaur.txt
+butterfree.txt
 
 
 ### c)
-
-
-
+beedrill filescan_00.1
+blastoise filescan_00.1
+bulbasaur filescan_00.1
+butterfree filescan_00.1
 
 
 
